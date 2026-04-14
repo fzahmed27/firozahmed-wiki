@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firoz Ahmed - Wikipedia</title>
+<link href="https://fonts.googleapis.com/css2?family=Linux+Libertine:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:1.6;color:#202122;background:#f8f9fa}
+.wiki-topbar{background:#fff;border-bottom:1px solid #a7d7f9;padding:0 16px;display:flex;align-items:center;height:44px;font-size:12px}
+.wiki-logo{display:flex;align-items:center;gap:8px;margin-right:24px;text-decoration:none;color:#202122}
+.wiki-logo-icon{width:36px;height:36px;background:#f8f9fa;border:1px solid #c8ccd1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:bold;font-family:'Linux Libertine','Georgia',serif;color:#202122}
+.wiki-logo-text{font-family:'Linux Libertine','Georgia',serif;font-size:16px}
+.wiki-topbar-nav{display:flex;gap:16px;list-style:none;font-size:13px}
+.wiki-topbar-nav a{color:#0645ad;text-decoration:none}
+.wiki-topbar-nav a:hover{text-decoration:underline}
+.wiki-tab-bar{background:#fff;border-bottom:1px solid #a2a9b1;padding:0 16px;display:flex;gap:0}
+.wiki-tab{padding:8px 12px;font-size:13px;color:#0645ad;text-decoration:none;border-bottom:2px solid transparent}
+.wiki-tab--active{color:#202122;font-weight:bold;border-bottom-color:#36c;background:#fff}
+.wiki-content-wrap{max-width:960px;margin:0 auto;background:#fff;min-height:100vh;border-left:1px solid #a2a9b1;border-right:1px solid #a2a9b1;padding:20px 24px 60px}
+.wiki-article-title{font-family:'Linux Libertine','Georgia',serif;font-size:28px;font-weight:400;line-height:1.3;border-bottom:1px solid #a2a9b1;padding-bottom:4px;margin-bottom:16px}
+.wiki-from{font-size:12px;color:#72777d;font-style:italic;margin-bottom:12px}
+.infobox{float:right;clear:right;width:280px;margin:0 0 16px 20px;border:1px solid #a2a9b1;border-collapse:collapse;font-size:13px;line-height:1.5;background:#f8f9fa}
+.infobox-header{background:#b0c4de;text-align:center;padding:8px 10px;font-family:'Linux Libertine','Georgia',serif;font-size:16px;font-weight:bold;color:#202122}
+.infobox-subheader{background:#d0dff0;text-align:center;padding:4px 10px;font-size:12px;color:#54595d;font-style:italic}
+.infobox-image{text-align:center;padding:8px;background:#f8f9fa}
+.infobox-image .avatar{width:140px;height:140px;background:linear-gradient(135deg,#dfe6ed 0%,#c8d6e5 100%);border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-size:48px;color:#636e72;border:1px solid #c8ccd1}
+.infobox-image .caption{font-size:11px;color:#72777d;margin-top:4px}
+.infobox-row{display:flex;border-top:1px solid #c8ccd1}
+.infobox-label{width:100px;flex-shrink:0;padding:4px 8px;font-weight:bold;background:#e8edf2;font-size:12px;vertical-align:top;color:#202122}
+.infobox-value{padding:4px 8px;flex:1;font-size:12px;color:#202122}
+.infobox-value a{color:#0645ad;text-decoration:none}
+.infobox-value a:hover{text-decoration:underline}
+.infobox-section-header{background:#d0dff0;text-align:center;padding:4px 8px;font-weight:bold;font-size:12px;border-top:1px solid #c8ccd1}
+.toc{display:inline-block;background:#f8f9fa;border:1px solid #a2a9b1;padding:10px 16px 10px 12px;margin:8px 0 16px;font-size:13px}
+.toc-title{font-weight:bold;text-align:center;margin-bottom:4px;font-size:13px}
+.toc ol{margin:0;padding-left:24px}
+.toc li{margin:2px 0}
+.toc a{color:#0645ad;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.toc ol ol{padding-left:20px;font-size:12px}
+h2.wiki-h2{font-family:'Linux Libertine','Georgia',serif;font-size:22px;font-weight:400;border-bottom:1px solid #a2a9b1;margin:24px 0 8px;padding-bottom:2px;clear:both}
+h3.wiki-h3{font-family:'Linux Libertine','Georgia',serif;font-size:17px;font-weight:400;margin:16px 0 6px}
+.edit-link{font-family:-apple-system,sans-serif;font-size:12px;font-weight:400;color:#0645ad;margin-left:8px;text-decoration:none}
+.edit-link:hover{text-decoration:underline}
+.wiki-p{margin-bottom:10px;font-size:14px;line-height:1.6}
+.wiki-p a{color:#0645ad;text-decoration:none}
+.wiki-p a:hover{text-decoration:underline}
+.wiki-ul{margin:4px 0 10px 24px;font-size:14px}
+.wiki-ul li{margin-bottom:3px;line-height:1.5}
+.wiki-ul a{color:#0645ad;text-decoration:none}
+.wikitable{border-collapse:collapse;margin:12px 0;font-size:13px;width:100%;background:#f8f9fa;border:1px solid #a2a9b1}
+.wikitable th{background:#eaecf0;padding:6px 10px;text-align:left;border:1px solid #a2a9b1;font-weight:bold;font-size:13px}
+.wikitable td{padding:5px 10px;border:1px solid #c8ccd1;vertical-align:top;font-size:13px}
+.wiki-categories{margin-top:32px;padding-top:12px;border-top:1px solid #a2a9b1;font-size:12px;color:#72777d}
+.wiki-categories a{color:#0645ad;text-decoration:none}
+.wiki-categories a:hover{text-decoration:underline}
+.wiki-footer-bar{max-width:960px;margin:0 auto;padding:16px 24px;font-size:11px;color:#72777d;text-align:center;line-height:1.6}
+.sup{font-size:10px;vertical-align:super;color:#0645ad;text-decoration:none}
+@media(max-width:720px){.infobox{float:none;width:100%;margin:0 0 16px}.wiki-content-wrap{padding:16px}.wiki-topbar,.wiki-tab-bar{display:none}}
+</style>
+</head>
+<body>
+<div class="wiki-topbar">
+  <a class="wiki-logo" href="#"><div class="wiki-logo-icon">W</div><span class="wiki-logo-text">Wikipedia</span></a>
+  <ul class="wiki-topbar-nav"><li><a href="#">Main page</a></li><li><a href="#">Contents</a></li><li><a href="#">Current events</a></li><li><a href="#">Random article</a></li></ul>
+</div>
+<div class="wiki-tab-bar">
+  <a class="wiki-tab wiki-tab--active" href="#">Article</a><a class="wiki-tab" href="#">Talk</a><a class="wiki-tab" href="#">Read</a><a class="wiki-tab" href="#">View source</a><a class="wiki-tab" href="#">View history</a>
+</div>
+<div class="wiki-content-wrap">
+  <h1 class="wiki-article-title">Firoz Ahmed</h1>
+  <p class="wiki-from">From Wikipedia, the free encyclopedia</p>
+
+  <!-- INFOBOX -->
+  <div class="infobox">
+    <div class="infobox-header">Firoz Ahmed</div>
+    <div class="infobox-subheader">R&D Engineer · Hardware-Software-AI</div>
+    <div class="infobox-image"><div class="avatar">🐺</div><div class="caption">Builder at the hardware-software edge</div></div>
+    <div class="infobox-row"><div class="infobox-label">Born</div><div class="infobox-value">Mangalore, <a href="#">Karnataka, India</a></div></div>
+    <div class="infobox-row"><div class="infobox-label">Residence</div><div class="infobox-value"><a href="#">Southlake, Texas</a>, U.S.</div></div>
+    <div class="infobox-row"><div class="infobox-label">Nationality</div><div class="infobox-value">American</div></div>
+    <div class="infobox-row"><div class="infobox-label">Education</div><div class="infobox-value">M.S. Mechanical Engineering, <a href="#">Texas A&M University-Kingsville</a> (2010)<br>B.E. Mechanical Engineering, <a href="#">Manipal Institute of Technology</a></div></div>
+    <div class="infobox-section-header">Professional career</div>
+    <div class="infobox-row"><div class="infobox-label">Current</div><div class="infobox-value">R&D Engineer, <a href="https://www.heatandcontrol.com" target="_blank">Heat and Control</a></div></div>
+    <div class="infobox-row"><div class="infobox-label">Previous</div><div class="infobox-value">Principal Engineer (Hardware), <a href="#">Sun King</a> (formerly PayGo Energy)</div></div>
+    <div class="infobox-row"><div class="infobox-label">Fields</div><div class="infobox-value"><a href="#">Composites</a>, <a href="#">CFD</a>, <a href="#">FEA</a>, <a href="#">Computer Vision</a>, <a href="#">Machine Learning</a>, <a href="#">Embedded Systems</a></div></div>
+    <div class="infobox-section-header">Research</div>
+    <div class="infobox-row"><div class="infobox-label">Thesis</div><div class="infobox-value"><i>Optimization of High Elongation Fiber-Reinforced Elastomer Composites</i> (2010)</div></div>
+    <div class="infobox-row"><div class="infobox-label">Advisor</div><div class="infobox-value"><a href="#">Dr. Larry Peel, Ph.D., P.E.</a></div></div>
+    <div class="infobox-section-header">Ventures</div>
+    <div class="infobox-row"><div class="infobox-label">Founded</div><div class="infobox-value"><a href="#">RayburAI</a> (voice AI)<br>The Foundry (micro-SaaS)</div></div>
+    <div class="infobox-row"><div class="infobox-label">Known for</div><div class="infobox-value">MEMS microphone flow sensor; Gocator vision-based conveying system; multiple patents; AI Grand Prix 2026; RL-trained drone software</div></div>
+    <div class="infobox-row"><div class="infobox-label">Website</div><div class="infobox-value"><a href="https://www.linkedin.com/in/firozahmed/" target="_blank">linkedin.com/in/firozahmed</a></div></div>
+  </div>
+
+  <!-- LEAD -->
+  <p class="wiki-p"><b>Firoz Ahmed</b> is an American <a href="#">mechanical engineer</a>, <a href="#">R&D</a> specialist, and <a href="#">entrepreneur</a> based in <a href="#">Southlake, Texas</a>. He currently serves as an R&D Engineer at <a href="https://www.heatandcontrol.com" target="_blank">Heat and Control</a>, one of the world's leading manufacturers of industrial food processing equipment. His work spans <a href="#">fiber reinforced composites</a>, <a href="#">computational fluid dynamics</a> (CFD), <a href="#">finite element analysis</a> (FEA), <a href="#">computer vision</a>, <a href="#">machine learning</a>, and <a href="#">embedded systems</a> — a rare multidisciplinary profile operating at the intersection of mechanical engineering and artificial intelligence.</p>
+  <p class="wiki-p">Ahmed is known for inventing a <b>sound-based flow sensor</b> using a <a href="#">MEMS microphone</a> in a low-pressure regulator for PayGo Energy's Smart Gas Meter, and has filed multiple patents for innovations in sensing and industrial process control. He is currently developing <a href="#">reinforcement learning</a>-trained autonomous drone software. He competed in the <b>AI Grand Prix 2026</b> autonomous drone racing competition, achieving a 100% lap completion rate with a 0% crash rate.</p>
+  <p class="wiki-p">Originally from <a href="#">Mangalore</a>, <a href="#">Karnataka, India</a>, Ahmed received his B.E. in Mechanical Engineering from <a href="#">Manipal Institute of Technology</a> before immigrating to the United States in 2008. He earned his M.S. in Mechanical Engineering from <a href="#">Texas A&M University-Kingsville</a> in 2010, where his NASA-funded graduate research focused on the optimization of <a href="#">fiber-reinforced elastomer</a> (FRE) composites for energy storage applications.<a class="sup" href="#ref1">[1]</a></p>
+
+  <!-- TOC -->
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#education">Early life and education</a></li>
+      <li><a href="#career">Career</a>
+        <ol>
+          <li><a href="#tamuk">Texas A&M Kingsville (composites research)</a></li>
+          <li><a href="#sunking">Sun King / PayGo Energy</a></li>
+          <li><a href="#heatcontrol">Heat and Control</a></li>
+        </ol>
+      </li>
+      <li><a href="#expertise">Technical expertise</a></li>
+      <li><a href="#products">Product development</a></li>
+      <li><a href="#ventures">Ventures and side projects</a>
+        <ol>
+          <li><a href="#rayburn">RayburAI</a></li>
+          <li><a href="#drones">Autonomous drone software</a></li>
+          <li><a href="#foundry">The Foundry and OpenClaw</a></li>
+        </ol>
+      </li>
+      <li><a href="#refs">References</a></li>
+    </ol>
+  </div>
+
+  <!-- EARLY LIFE -->
+  <h2 class="wiki-h2" id="education">Early life and education <a class="edit-link" href="#">[edit]</a></h2>
+  <p class="wiki-p">Firoz Ahmed was born in <a href="#">Mangalore</a>, <a href="#">Karnataka, India</a>. He completed his Bachelor of Engineering (B.E.) in Mechanical Engineering from <a href="#">Manipal Institute of Technology</a> (MIT), Manipal, one of India's premier private engineering institutions.<a class="sup" href="#ref1">[1]</a></p>
+  <p class="wiki-p">Ahmed immigrated to the United States in 2008 and enrolled at <a href="#">Texas A&M University-Kingsville</a>, where he earned a Master of Science (M.S.) in Mechanical Engineering in August 2010. His thesis, <i>Optimization of High Elongation Fiber-Reinforced Elastomer Composites</i>, was supervised by <a href="#">Dr. Larry Peel, Ph.D., P.E.</a> and was conducted as part of the NASA-funded <b>Space Engineering Institute</b> (SEI) program affiliated with the Texas A&M University System and mentored by NASA-Johnson Space Center.<a class="sup" href="#ref1">[1]</a></p>
+  <p class="wiki-p">Ahmed's graduate research focused on optimizing <a href="#">fiber-reinforced elastomer</a> (FRE) composite strips for use in a <b>mechanical battery</b> — a device intended to store energy through the mechanical stretching of elastomer-carbon fiber strips, analogous to a stretched rubber band, as an alternative to electrochemical batteries. His work involved fabricating FRE specimens using <a href="#">filament winding</a> on an Entec filament winder and <a href="#">vacuum bag molding</a>, testing them under cyclic tensile loads on a Universal Testing Machine, and optimizing fiber tow spacing (bandwidth) to maximize strain energy density and lifespan. He worked with IM7 carbon fiber and Freeman 1040 polyurethane elastomer, and determined that the 1.5 bandwidth configuration was optimal — achieving 50% strain without failure and storing the maximum energy for the mechanical battery application.<a class="sup" href="#ref1">[1]</a></p>
+
+  <!-- CAREER -->
+  <h2 class="wiki-h2" id="career">Career <a class="edit-link" href="#">[edit]</a></h2>
+
+  <h3 class="wiki-h3" id="tamuk">Texas A&M Kingsville (composites research)</h3>
+  <p class="wiki-p">As a graduate student and Space Engineering Institute member at Texas A&M Kingsville, Ahmed developed expertise in composite materials fabrication, including filament winding of IM7 carbon fiber tows at controlled angles (±45°, ±60°, ±75°) and bandwidths onto tapered steel mandrels, vacuum bag consolidation, hand layup of carbon cloth, and press-and-platen curing. He designed and fabricated custom test grips for the Universal Testing Machine, developed a heat lamp curing system to address humidity-related curing issues, and created a geometric Excel model for predicting FRE strip deformation. His experimental work included mechanical testing (stress-strain characterization, hysteresis analysis, stress relaxation), fiber volume fraction determination (resin burn-out and water immersion methods per ASTM 2584), and comparison with predicted values from Classical Lamination Theory software.<a class="sup" href="#ref1">[1]</a></p>
+
+  <h3 class="wiki-h3" id="sunking">Sun King / PayGo Energy</h3>
+  <p class="wiki-p">Ahmed served as <b>Principal Engineer (Hardware)</b> at <a href="#">Sun King</a> (formerly PayGo Energy), a company focused on clean cooking technology and off-grid energy products for markets in Africa and Asia.<a class="sup" href="#ref2">[2]</a> At PayGo Energy, he was directly involved in the development of the company's <b>IoT Smart Meter</b> — the Cylinder Smart Meter (CSM), a pay-as-you-go LPG metering device that was the first to achieve ATEX Zone II certification for LPG applications.<a class="sup" href="#ref3">[3]</a></p>
+  <p class="wiki-p">A key contribution during his tenure was the invention of a <b>sound-based flow sensor</b> using a <a href="#">MEMS microphone</a> integrated into a low-pressure regulator. This acoustic sensing approach enabled non-intrusive gas flow measurement within PayGo's Smart Gas Meter, leveraging the correlation between acoustic signatures and flow rates through the regulator — an innovation that avoided the cost and complexity of traditional mechanical flow sensors while maintaining measurement accuracy in a safety-critical LPG environment. Ahmed led the creation of a custom <a href="#">PCBA</a> (printed circuit board assembly) for the sensor system based on a <a href="#">Nordic Semiconductor</a> microcontroller, managing contract hardware and firmware engineers through the board design, layout, and bring-up process.<a class="sup" href="#ref4">[4]</a></p>
+  <p class="wiki-p">His broader responsibilities included 3D CAD modeling, FEA, hardware product development, and leading certification testing as a liaison between partner manufacturers, testing companies, and internal engineering. He also developed AT command interfaces for system diagnostics and built the AFC (Acoustic Flow Control) proof-of-concept test rig software.<a class="sup" href="#ref4">[4]</a> A colleague noted that Ahmed "brought a different engineering perspective that was helpful to all members of the team."<a class="sup" href="#ref5">[5]</a></p>
+
+  <h3 class="wiki-h3" id="heatcontrol">Heat and Control</h3>
+  <p class="wiki-p">Since December 2023, Ahmed has served as <b>R&D Engineer – Product Development</b> at <a href="https://www.heatandcontrol.com" target="_blank">Heat and Control Inc.</a>, one of the world's leading manufacturers of industrial food processing, conveying, seasoning, packaging, and inspection equipment, with a global manufacturing footprint exceeding 101,000 m². The role spans the company's Texas and California operations in a hybrid capacity.<a class="sup" href="#ref6">[6]</a></p>
+  <p class="wiki-p">At Heat and Control, Ahmed leads end-to-end development of aerodynamic, fluid, and electromechanical systems from proof-of-concept through production beta, integrating mechanical design, sensors, and control systems. His work includes:</p>
+  <ul class="wiki-ul">
+    <li>Developed air–liquid separation systems from concept to manufacturing using CFD, empirical models, and field validation</li>
+    <li>Built Gocator 3D vision system for real-time mass flow control in conveying lines</li>
+    <li>Designed and validated prototypes across mechanical, fluid, and PID control subsystems</li>
+    <li>Managed global engineering teams (Europe, U.S., Australia) with 24/7 development cycles</li>
+    <li>Led R&D reviews with executive leadership, translating technical risk into business decisions</li>
+    <li>Supported manufacturing scale-up and customer deployments across global facilities</li>
+    <li>Filed multiple patents in sensing and industrial process control</li>
+  </ul>
+
+  <!-- EXPERTISE -->
+  <h2 class="wiki-h2" id="expertise">Technical expertise <a class="edit-link" href="#">[edit]</a></h2>
+  <table class="wikitable">
+    <tr><th>Domain</th><th>Description</th><th>Tools / Methods</th></tr>
+    <tr><td><b>Composite Materials & Manufacturing</b></td><td>Fiber reinforced elastomer/composite design, filament winding, vacuum bag molding, hand layup, curing process optimization, laminate analysis, cyclic load testing, fiber volume fraction characterization</td><td>Filament winder, vacuum bagging, UTM, ASTM standards, CLT software</td></tr>
+    <tr><td><b>Computational Fluid Dynamics</b></td><td>Navier-Stokes solvers, turbulence modeling (RANS/LES), multiphase flow, liquid-air separation system design, conjugate heat transfer, aerodynamic and thermal process simulation</td><td>ANSYS Fluent, OpenFOAM, STAR-CCM+, ParaView</td></tr>
+    <tr><td><b>Computer Vision & ML</b></td><td>Gocator 3D vision-based mass flow control, quality inspection, defect detection, process monitoring, 2D pose estimation, end-to-end training-to-edge pipelines, reinforcement learning for autonomous systems</td><td>Gocator, PyTorch, OpenCV, YOLOv8, RL frameworks, edge deployment</td></tr>
+    <tr><td><b>Mechanical Design & CAD</b></td><td>3D modeling for industrial equipment, DFM, GD&T, tolerance analysis, topology optimization, living hinge and snap-fit design</td><td>SolidWorks, Creo, Pro/E, ANSYS Mechanical</td></tr>
+    <tr><td><b>FEA / Multi-Physics</b></td><td>Structural, thermal, and coupled FEA; topology optimization (demonstrated 57% mass reduction); fatigue life, modal analysis</td><td>ANSYS Mechanical, ANSYS Structural, COMSOL, MATLAB</td></tr>
+    <tr><td><b>Sensor Design & Embedded IoT</b></td><td>Novel MEMS microphone-based acoustic flow sensors, custom PCBA design and bring-up, firmware, sensor integration, PID controllers (PSOC microcontrollers), IoT smart meters, AT command interfaces, Raspberry Pi test fixtures, motion detection</td><td>Nordic Semiconductor, MEMS microphones, C/C++, Python, Particle IoT, PSOC, Raspberry Pi, VPython</td></tr>
+  </table>
+
+  <!-- PRODUCT DEVELOPMENT -->
+  <h2 class="wiki-h2" id="products">Product development <a class="edit-link" href="#">[edit]</a></h2>
+  <p class="wiki-p">Ahmed's product development portfolio spans multiple industries and includes both commercial and research hardware:<a class="sup" href="#ref4">[4]</a></p>
+  <ul class="wiki-ul">
+    <li><b>Gocator 3D vision-based conveying system (Heat and Control)</b> — vision system using Gocator 3D sensors to set and maintain consistent mass flow rate in product conveying systems, enabling real-time closed-loop flow control</li>
+    <li><b>Liquid-air separation system (Heat and Control)</b> — developed from concept to manufacturing using CFD simulation, empirical models, and field validation</li>
+    <li><b>IoT Smart Meter (PayGo Energy)</b> — the Cylinder Smart Meter for pay-as-you-go LPG metering, the first ATEX Zone II certified LPG smart meter; Ahmed invented the acoustic flow sensing method using a MEMS microphone in the low-pressure regulator and led creation of a custom PCBA on a Nordic microcontroller</li>
+    <li><b>Topology-optimized components</b> — FEA-driven structural redesigns achieving 57% mass reduction (1.3 kg → 0.56 kg) while maintaining structural requirements</li>
+    <li><b>Embedded projects</b> — rovers, PSOC-based PID controllers for rack and pinion motion, laser rotation measurement systems, RPi-based test fixtures with video capture, and VPython motion detection rendering</li>
+  </ul>
+  <p class="wiki-p">Ahmed has filed <b>multiple patents</b> for innovations in sensing technology, industrial process control, and related systems.<a class="sup" href="#ref7">[7]</a></p>
+
+  <!-- VENTURES -->
+  <h2 class="wiki-h2" id="ventures">Ventures and side projects <a class="edit-link" href="#">[edit]</a></h2>
+
+  <h3 class="wiki-h3" id="rayburn">RayburAI</h3>
+  <p class="wiki-p">Ahmed founded <b>RayburAI</b>, a multilingual voice AI agent designed for clinic scheduling. The product was built in <a href="#">TypeScript</a> using the <a href="#">OpenAI</a> Realtime API with multilingual support and calendar integration, targeting healthcare clinics through warm family-connected leads.</p>
+
+  <h3 class="wiki-h3" id="drones">Autonomous drone software</h3>
+  <p class="wiki-p">Ahmed is currently developing <a href="#">reinforcement learning</a>-trained autonomous drone software. The project builds on his AI Grand Prix 2026 competition experience, applying RL techniques to train drone agents for autonomous navigation, obstacle avoidance, and real-time decision-making — combining his embedded systems background with modern AI methods for physical robotics applications.</p>
+
+  <h3 class="wiki-h3" id="foundry">The Foundry and OpenClaw</h3>
+  <p class="wiki-p"><b>The Foundry</b> is a micro-SaaS generation pipeline structured as a Scout → Analyst → Builder workflow for autonomous identification, validation, and construction of small software products. <b>OpenClaw / Jarvis</b> is a multi-agent system featuring SQLite-backed persistent memory, <a href="#">ChromaDB</a> RAG, Slack integration, health monitoring sub-agents, and automated daily/weekly digest workflows.</p>
+
+  <!-- REFERENCES -->
+  <h2 class="wiki-h2" id="refs">References <a class="edit-link" href="#">[edit]</a></h2>
+  <ol class="wiki-ul" style="font-size:12px;color:#54595d;margin-left:24px;">
+    <li id="ref1">Ahmed, Firoz. <i>Optimization of High Elongation Fiber-Reinforced Elastomer Composites</i>. M.S. Thesis, Texas A&M University-Kingsville, August 2010. Advisor: Dr. Larry Peel, Ph.D., P.E.</li>
+    <li id="ref2">Sun King (formerly PayGo Energy). Company profile and product portfolio.</li>
+    <li id="ref3">PayGo Energy. "The PayGo CSM becomes the first (and only) LPG smart meter to be ATEX Zone II certified." Company timeline.</li>
+    <li id="ref4">Ahmed, Firoz. <i>Engineering Portfolio</i>. Product development history, FEA, software development, and hobby projects.</li>
+    <li id="ref5">LinkedIn recommendation. Principal Engineer tenure at Sun King / PayGo Energy.</li>
+    <li id="ref6">Heat and Control. "About Us — Global Manufacturing Footprint." <a href="https://www.heatandcontrol.com" target="_blank">heatandcontrol.com</a>.</li>
+    <li id="ref7">Ahmed, Firoz. Multiple patent filings in sensing technology and industrial process control (details pending publication).</li>
+  </ol>
+
+  <div class="wiki-categories">
+    <b>Categories:</b>
+    <a href="#">American mechanical engineers</a> · <a href="#">Indian emigrants to the United States</a> · <a href="#">People from Mangalore</a> · <a href="#">People from Southlake, Texas</a> · <a href="#">Manipal Institute of Technology alumni</a> · <a href="#">Texas A&M University-Kingsville alumni</a> · <a href="#">Composite materials researchers</a> · <a href="#">Computational fluid dynamics researchers</a> · <a href="#">Computer vision engineers</a> · <a href="#">Machine learning engineers</a> · <a href="#">American entrepreneurs</a> · <a href="#">IoT engineers</a> · <a href="#">American patent holders</a>
+  </div>
+</div>
+<div class="wiki-footer-bar">This page was last edited on 13 April 2026, at 22:00 (UTC).<br>Text is available under the Creative Commons Attribution-ShareAlike License 4.0.</div>
+</body>
+</html>
